@@ -1,27 +1,15 @@
 package com.myhours.ui.model;
 
-import android.graphics.drawable.Drawable;
+import android.app.usage.UsageStats;
 
 public class AppList {
-    private String appName;
-    private  String appPackageName;
-    private Drawable appIcon;
 
-    public AppList(String appName, String appPackageName, Drawable appIcon) {
-        this.appName = appName;
-        this.appPackageName = appPackageName;
-        this.appIcon = appIcon;
+    public UsageStats usageStats;
+
+    public AppList() {
     }
 
-    public String getAppName() {
-        return appName;
-    }
-
-    public String getAppPackageName() {
-        return appPackageName;
-    }
-
-    public Drawable getAppIcon() {
-        return appIcon;
+    public AppList(UsageStats usageStats) {
+        this.usageStats = usageStats;
     }
 }
